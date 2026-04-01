@@ -1,10 +1,12 @@
 title: Harshit Singhal
-theme: jekyll-theme-slate
+theme: minima
 description: Data Research Engineering ePortfolio showcasing AI/ML research, software engineering, and technical projects.
+minima:
+  skin: dark
 header_pages:
   - index.md
   - about.md
   - resume.md
-  - goals.md
   - projects.md
+  - goals.md
   - contact.md
