@@ -1,0 +1,47 @@
+---
+---
+@import "minima";
+
+body {
+  background-color: #121212; 
+  color: #e0e0e0; 
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.site-header {
+  background-color: #1a1a1a; 
+  border-top: 6px solid #4da6ff; 
+  border-bottom: 1px solid #333333;
+}
+
+.site-title, .page-link {
+  color: #ffffff !important; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff; 
+}
+
+a {
+  color: #4da6ff; 
+  text-decoration: none;
+}
+
+a:hover {
+  color: #80c1ff;
+  text-decoration: underline;
+}
+
+hr {
+  border-top: 1px solid #333333;
+}
+
+table th, table td {
+  border: 1px solid #333333;
+}
+
+pre, code {
+  background-color: #1a1a1a;
+  color: #e0e0e0;
+  border: 1px solid #333333;
+}
