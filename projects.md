@@ -3,19 +3,31 @@ layout: page
 title: Technical Projects
 permalink: /projects/
 ---
-# Technical Projects
+# Technical Portfolio
 
-A portfolio of my technical work, coursework, and personal projects.
+A curated selection of my technical research, software engineering projects, and academic coursework.
 
-### ECE 1100 Discovery Project
-* [cite_start]**Overview:** *(Write your ~500-word overview explaining the project and results here[cite: 39].)*
-* [cite_start]**Impact:** *(Describe your contributions and the significance of the work[cite: 131].)*
-[cite_start]*(Embed your required images/photos/visuals here[cite: 39].)*
+<hr>
 
-### F1 in Schools: Aerodynamics & Car Design
-* **Overview:** Designed and optimized a model car using Onshape and CFD simulations to analyze sidepod aerodynamics and ensure compliance with racing regulations.
-*(Drop in screenshots of your CFD simulations and Onshape models here to easily hit the 5-image minimum for the website)*
+### 🔬 ECE 1100 Discovery Project
+* **Project Overview:** This project represents the culminating research and self-discovery process for my ECE roadmap.
+* **Impact & Contributions:** Allowed me to systematically identify my career trajectory within computer engineering and connect my classroom knowledge to real-world AI and hardware applications. 
+*(Note: Ensure you expand this to ~500 words before the final showcase to meet the rubric requirements)*
 
-### Digital Logic & Computer Architecture
-* **Overview:** Coursework and technical experience involving RISC-V assembly, VHDL, SCOMP, and control flow diagrams.
-*(Embed digital logic diagrams or code snippets here)*
+<hr>
+
+### 🤖 aigentify: Pretrained AI Marketplace
+* **Project Overview:** As Cofounder, I helped architect a transparent marketplace platform that enables businesses to effectively evaluate and shop for pretrained AI models. 
+* **Impact:** The initiative successfully secured over $12,000 in grant funding and forged key partnerships with international AI organizations.
+
+<hr>
+
+### 🏎️ F1 in Schools: Aerodynamics & Car Design
+* **Project Overview:** Designed and iteratively optimized a model Formula 1 car to ensure strict compliance with racing regulations while maximizing speed.
+* **Impact:** Utilized Onshape and ran extensive CFD simulations to analyze and improve sidepod aerodynamics.
+
+<hr>
+
+### 🌌 Machine Learning in Astrophysics (NYU)
+* **Project Overview:** Served as a Research Assistant focusing on planetary, astro, and particle physics research. 
+* **Impact:** Built a predictive machine learning model from scratch, independently collated complex astronomical data sets, derived the final results, and formally presented the findings.
