@@ -1,3 +1,10 @@
-title: Harshit Singhal - ePortfolio
+title: Harshit Singhal
 theme: minima
-description: ECE 1100 ePortfolio showcasing my technical projects, career goals, and experience.
+description: Data Research Engineering ePortfolio showcasing AI/ML research, software engineering, and technical projects.
+header_pages:
+  - index.md
+  - about.md
+  - resume.md
+  - goals.md
+  - projects.md
+  - contact.md
