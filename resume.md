@@ -9,9 +9,9 @@ permalink: /resume/
 </div>
 
 <div align="center">
-  <iframe src="/My_Resume.pdf" width="100%" height="800px" style="border: 1px solid #333333; border-radius: 8px;">
-    This browser does not support PDFs. Please download the PDF to view it.
-  </iframe>
+  <object data="/My_Resume.pdf" type="application/pdf" width="100%" height="800px" style="border: 1px solid #333333; border-radius: 8px;">
+    <p>Your browser doesn't have a built-in PDF viewer. <a href="/My_Resume.pdf">Click here to download the file.</a></p>
+  </object>
 </div>
 <hr>
 
