@@ -5,8 +5,15 @@ permalink: /resume/
 ---
 # Resume & Experience
 
-<a href="resume.pdf" target="_blank" style="padding: 8px 15px; background-color: #333; color: white; text-decoration: none; border-radius: 5px;">📄 Download Full Resume (PDF)</a>
+<div align="center" style="margin-bottom: 20px;">
+  <a href="My_Resume.pdf" target="_blank" style="padding: 8px 15px; background-color: #333; color: white; text-decoration: none; border-radius: 5px;">📄 Download Full Resume (PDF)</a>
+</div>
 
+<div align="center">
+  <iframe src="My_Resume.pdf" width="100%" height="800px" style="border: 1px solid #333333; border-radius: 8px;">
+    This browser does not support PDFs. Please download the PDF to view it.
+  </iframe>
+</div>
 <hr>
 
 ### 💼 Work & Research Experience
