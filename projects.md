@@ -11,7 +11,7 @@ A curated selection of my technical research, software engineering projects, and
 
 ### 🔬 ECE 1100 Discovery Project
 
-* [ECE 1100 Discovery Project: Acoustic Analyzer](discovery-project.html)
+* [ECE 1100 Discovery Project: Acoustic Analyzer](discovery-project.md)
 * **Project Overview:** This project represents the culminating research and self-discovery process for my ECE roadmap.
 * **Impact & Contributions:** Allowed me to systematically identify my career trajectory within computer engineering and connect my classroom knowledge to real-world AI and hardware applications.
 
