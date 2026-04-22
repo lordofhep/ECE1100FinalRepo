@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discovery Project: Acoustic State Machine | ECE 1100</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --text-color: #c9d1d9;
+            --heading-color: #58a6ff;
+            --accent-color: #238636;
+            --code-bg: #161b22;
+            --border-color: #30363d;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        h1, h2, h3 {
+            color: var(--heading-color);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 8px;
+            margin-top: 40px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            border-bottom: none;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            color: #8b949e;
+            margin-top: 0;
+            margin-bottom: 40px;
+        }
+        .author-info {
+            background-color: var(--code-bg);
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 40px;
+        }
+        .author-info p {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+        .media-container {
+            background-color: #000;
+            border: 1px dashed var(--heading-color);
+            border-radius: 8px;
+            padding: 40px;
+            text-align: center;
+            margin: 30px 0;
+            color: #8b949e;
+        }
+        pre {
+            background-color: var(--code-bg);
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            border: 1px solid var(--border-color);
+        }
+        code {
+            font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+            font-size: 14px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        .highlight {
+            color: var(--accent-color);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Acoustic State Machine & Real-Time Analyzer</h1>
+        <p class="subtitle">ECE 1100 Discovery Project Showcase</p>
+        
+        <div class="author-info">
+            <p>Developer: Harshit Singhal</p>
+            <p>Major: Computer Engineering</p>
+            <p>Institution: Georgia Institute of Technology</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="idea">
+            <h2>Discovery Project Idea</h2>
+            <p>The initial goal of this project was to engage in hands-on exploration of digital signal processing within a low-stakes environment. I wanted to build a bridge between the physical world of unseen analog data (ambient room audio) and the digital world by creating a tool that visualizes a real-time frequency spectrum using Python. This aligns with my broader interests in autonomous systems and how hardware interfaces with environmental sensors.</p>
+        </section>
+
+        <section id="progress">
+            <h2>Project Progress</h2>
+            <p>The project evolved significantly over the course of its development. What started as a basic, single-line data visualizer was iteratively upgraded into a robust piece of analysis software. Key milestones included:</p>
+            <ul>
+                <li>Capturing live audio buffers directly from the system microphone.</li>
+                <li>Implementing a mathematical windowing function (Hanning window) to prevent spectral leakage before executing the Fast Fourier Transform (FFT).</li>
+                <li>Adding a decaying "Peak-Hold" line to track transient sound spikes.</li>
+                <li>Developing a dominant frequency tracking algorithm using NumPy matrix operations.</li>
+            </ul>
+
+            <div class="media-container">
+                <p><em>[Insert your 30-second screen recording here showing the UI reacting to clapping/talking]</em></p>
+                <p><code>&lt;video src="demo_video.mp4" controls width="100%"&gt;&lt;/video&gt;</code></p>
+            </div>
+        </section>
+
+        <section id="challenges">
+            <h2>Project Successes and Failures</h2>
+            <p>The development process presented several excellent engineering roadblocks that required debugging and system-level troubleshooting:</p>
+            <ul>
+                <li><strong>Failure/Roadblock:</strong> Navigating strict macOS privacy architecture and hardware access protocols. Setting up isolated Python virtual environments to correctly bind the <code>sounddevice</code> library to the low-level PortAudio drivers was initially a major hurdle.</li>
+                <li><strong>Roadblock:</strong> Balancing the FFT <code>BLOCK_SIZE</code>. I had to experiment to find the exact mathematical trade-off: too large of a block size resulted in a highly detailed but visually lagging graph, while too small of a block updated instantly but suffered from poor frequency resolution.</li>
+                <li><strong>Success:</strong> Successfully integrating a logical State Machine overlay that parses noisy analog inputs into clean, binary system states without failing or crashing.</li>
+            </ul>
+        </section>
+
+        <section id="skills">
+            <h2>ECE Skills Gained</h2>
+            <p>This project bridged the gap between software engineering and fundamental digital logic design. The core ECE skills developed include:</p>
+            <ul>
+                <li><strong>Digital Signal Processing (DSP):</strong> Practical application of the Fast Fourier Transform to convert time-domain signals into the frequency domain.</li>
+                <li><strong>Hardware/Software Integration:</strong> Pulling raw sensor data (microphone inputs) into a software environment in real-time.</li>
+                <li><strong>Finite State Machine Logic:</strong> Establishing strict <code>OK</code>, <code>WARNING</code>, and <code>ERROR</code> states based on real-time decibel thresholds within specific acoustic frequency bands (200Hz - 2kHz). This mimics the logic used in hardware safety controls.</li>
+            </ul>
+        </section>
+
+        <section id="conclusion">
+            <h2>Final Thoughts & Next Steps</h2>
+            <p>Completing this project was a highly rewarding experience that solidified my interest in the intersection of hardware logic and software control. Being able to visualize the immediate mathematical results of the code in the physical world is much more engaging than purely theoretical work. Moving forward, I am interested in potentially migrating this Python logic onto a dedicated hardware microcontroller, or expanding the software to include a rolling 2D "Waterfall" spectrogram for time-history analysis.</p>
+        </section>
+
+        <section id="code">
+            <h2>Core Source Code</h2>
+            <p>Below is the Python implementation driving the active state machine and FFT visualization.</p>
+            <pre><code>
+# A snippet of the core logic processing the FFT and State Machine
+def update_plot(frame):
+    global audio_data, peak_data
+    
+    # 1. Math: Windowing and FFT
+    yf = np.fft.rfft(audio_data * WINDOW)
+    magnitude = np.abs(yf) * 2 / BLOCK_SIZE
+    magnitude_db = 20 * np.log10(magnitude + 1e-9) 
+    
+    # 2. Peak Hold Decay
+    peak_data = np.maximum(peak_data, magnitude_db)
+    peak_data -= 1.0 # Decay rate
+    
+    # 3. STATE MACHINE LOGIC (200Hz - 2kHz)
+    band_mask = (xf >= TARGET_FREQ_MIN) & (xf <= TARGET_FREQ_MAX)
+    target_max_db = np.max(magnitude_db[band_mask]) if np.any(band_mask) else -60
+
+    if target_max_db > -20:       # Loud sound (Clap)
+        current_state = "ERROR"
+        color = "#FF0000"
+    elif target_max_db > -40:     # Medium sound (Talking)
+        current_state = "WARNING"
+        color = "#FFA500" 
+    else:                         # Quiet (Background)
+        current_state = "OK"
+        color = "#00FF00" 
+        
+    return live_line, peak_line, freq_text, state_text
+            </code></pre>
+        </section>
+    </main>
+
+    <footer style="margin-top: 50px; text-align: center; color: #8b949e; border-top: 1px solid #30363d; padding-top: 20px;">
+        <p>Created for ECE 1100 Discovery Project Presentation.</p>
+    </footer>
+
+</body>
+</html>
