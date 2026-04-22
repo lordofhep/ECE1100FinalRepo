@@ -2,7 +2,7 @@
 title: Discovery Project
 ---
 
-# Acoustic State Machine & Real-Time Analyzer
+# Acoustic State Machine and Real-Time Analyzer
 **ECE 1100 Discovery Project Showcase**
 
 **Developer:** Harshit Singhal  
