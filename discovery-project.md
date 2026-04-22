@@ -2,7 +2,7 @@
 title: Discovery Project
 ---
 
-# Acoustic State Machine and Real-Time Analyzer
+# Acoustic State Machine & Real-Time Analyzer
 **ECE 1100 Discovery Project Showcase**
 
 **Developer:** Harshit Singhal  
@@ -28,7 +28,14 @@ The project evolved from a rudimentary data visualizer into a robust, multi-stag
 * **Data Persistence:** Developed a decaying "Peak-Hold" memory array to track transient sound spikes, allowing for the observation of temporary acoustic anomalies over time.
 * **Logic Integration:** Designed a continuous evaluation loop utilizing NumPy matrix operations to actively isolate and track the dominant frequency within the environment.
 
-> **Live System Demonstration** > *[Insert your 30-second screen recording here: `![Demo Video](./demo_video.mp4)` or link to YouTube]*
+<br>
+
+<div align="center">
+  <h3>Live System Demonstration</h3>
+  <iframe width="640" height="360" src="https://www.youtube.com/embed/WlLmjvTHOPU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<br>
 
 ## 3. Engineering Roadblocks & Iterative Solutions
 
