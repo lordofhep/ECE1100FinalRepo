@@ -1,3 +1,6 @@
+---
+title: Discovery Project
+---
 # Acoustic State Machine & Real-Time Analyzer
 **ECE 1100 Discovery Project Showcase**
 
